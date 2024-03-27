@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unknown-property */
 import {
   Container,
   Card,
@@ -29,6 +32,7 @@ const SavedBooks = () => {
     }
 
     try {
+      
       const { data } = await removeBook({
         variables: { bookId },
       });
